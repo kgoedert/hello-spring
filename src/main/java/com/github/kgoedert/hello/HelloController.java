@@ -10,4 +10,9 @@ public class HelloController {
     String getHello() {
         return "Hello World!";
     }
+
+    @RequestMapping("/notcovered")
+    String notTestCovered(){
+        return "not covered by tests";
+    }
 }
